@@ -1,0 +1,24 @@
+{
+	"name": "go",
+	"version": "0.0.1",
+	"description": "Simple flow control library",
+	"url": "https://github.com/arnesten/go",
+	"keywords": ["go", "flow-control"],
+	"author": "Calle Arnesten <calle.arnesten@codekick.com>",
+	"main": "./lib/go.js",
+	"dependencies": {
+		"step": "https://github.com/CodeKick/step/archive/master.tar.gz",
+		"underscore": "*"
+	},
+	"devDependencies": {
+		"buster": "*",
+		"buster-helpers": "https://github.com/arnesten/buster-helpers/archive/master.tar.gz",
+		"sinon": "*"
+	},
+	"engines": {
+		"node": ">=0.8.0"
+	},
+	"scripts": {
+		"test": "node test/runAll.js"
+	}
+}
