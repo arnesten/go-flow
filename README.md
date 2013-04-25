@@ -5,6 +5,8 @@ Inspired by [step](https://github.com/creationix/step) and [ff](https://github.c
 # Example usage
 
 ```javascript
+var go = require('go-flow');
+
 var g = go(function () {
     departmentDb.get(departmentId, g());
 
