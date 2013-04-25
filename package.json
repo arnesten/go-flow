@@ -1,8 +1,8 @@
 {
-	"name": "go",
+	"name": "go-flow",
 	"version": "0.0.1",
 	"description": "Simple flow control library",
-	"url": "https://github.com/arnesten/go",
+	"url": "https://github.com/arnesten/go-flow",
 	"keywords": ["go", "flow-control"],
 	"author": "Calle Arnesten <calle.arnesten@codekick.com>",
 	"main": "./lib/go.js",

@@ -1,4 +1,4 @@
-# go: Simple JavaScript Flow Control Library
+# go-flow: Simple JavaScript Flow Control Library
 
 Inspired by [step](https://github.com/creationix/step) and [ff](https://github.com/gameclosure/ff)
 
