@@ -1,6 +1,6 @@
 # go: Simple JavaScript Flow Control Library
 
-Inspired by (step)[https://github.com/creationix/step] and (ff)[https://github.com/gameclosure/ff]
+Inspired by [step](https://github.com/creationix/step) and [ff](https://github.com/gameclosure/ff)
 
 # Example usage
 
@@ -13,13 +13,10 @@ var g = go(function () {
         userDb.get(userId, group());
     });
 }, function (department, users) {
-
     doSomething(department, users);
-
 }).onError(function (err) {
     handleError(err);
 });
-}
 ```
 
 # License
