@@ -159,5 +159,34 @@ module.exports = testCase('go', {
 			assert.equals(result, [1,[2]]);
 			done();
 		});
+	},
+	'can share data between steps': function (done) {
+		var g = go(function () {
+			g.data.aKey = 'aValue';
+		}, function () {
+			assert.equals(g.data, { aKey: 'aValue' });
+
+			g.data.otherKey = 'otherValue';
+		}, function () {
+			assert.equals(g.data, { aKey: 'aValue', otherKey: 'otherValue' });
+
+			done();
+		});
+	},
+	'shared data between steps are unique per instance': function (done) {
+		function nested(cb) {
+			var g = go(function () {
+				assert.equals(g.data, {});
+				g.data.aKey = 'nested'
+			}, cb);
+		}
+
+		var g = go(function () {
+			g.data.aKey = 'aValue';
+			nested(g());
+		}, function () {
+			assert.equals(g.data, { aKey: 'aValue' });
+			done();
+		});
 	}
 });
