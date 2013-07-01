@@ -1,6 +1,6 @@
 {
     "name": "go-flow",
-    "version": "0.0.3",
+    "version": "1.0.0",
     "description": "Simple flow control library inspired by step and ff",
     "author": "Calle Arnesten <calle.arnesten@codekick.com>",
     "keywords": [
