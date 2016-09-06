@@ -1,24 +1,15 @@
 {
     "name": "go-flow",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Simple flow control library inspired by step and ff",
     "author": "Calle Arnesten <calle.arnesten@codekick.com>",
     "keywords": [
         "flow-control", "flow", "control", "async", "asynchronous", "step", "parallel"
     ],
     "main": "./lib/go.js",
-    "dependencies": {
-        "step": "https://github.com/CodeKick/step/archive/master.tar.gz",
-        "underscore": "*"
-    },
     "devDependencies": {
-        "buster": "*",
-        "buster-helpers": "https://github.com/arnesten/buster-helpers/archive/master.tar.gz",
-        "sinon": "*"
+        "bocha": "^1.0.1"
     },
-    "engines": [
-        "node >= 0.8.0"
-    ],
     "scripts": {
         "test": "node test/runAll.js"
     },

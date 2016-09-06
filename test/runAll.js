@@ -1,6 +1,5 @@
-var path = require('path');
-var busterHelpers = require('buster-helpers');
+var bocha = require('bocha');
 
-busterHelpers.runOnce(__dirname, {
+bocha.runOnce(__dirname, {
 	fileSuffix: '.tests.js'
 });
